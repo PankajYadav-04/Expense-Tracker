@@ -1,6 +1,6 @@
 # Expense Tracker – Manage Your Finances Easily 💰
 
-A simple yet functional web application to track your income and expenses. Built using **React.js** for the frontend and **Node.js + Express** for the backend, with **MongoDB** as the database.
+A simple yet functional web application to track your expenses. Built using **React.js** for the frontend and **Node.js + Express** for the backend.
 
 ---
 
@@ -32,7 +32,7 @@ It’s designed to be minimal, responsive, and easy to use — making personal f
 - React Router DOM
 - Context API for state management
 - Axios for API calls
-- Tailwind CSS (or CSS Modules depending on your setup)
+- Tailwind CSS 
 
 ### 🔹 Backend
 
@@ -58,13 +58,14 @@ expense-tracker/
 │   └── package.json
 │
 └── server/                         # Node.js backend
-    ├── controllers/               # Business logic
-    ├── models/                    # Mongoose schemas
-    ├── routes/                    # API routes
-    ├── middleware/                # Auth middleware
-    ├── config/                    # DB config and environment setup
+    ├── controllers/                # Business logic
+    ├── models/                     # Mongoose schemas
+    ├── routes/                     # API routes
+    ├── middleware/                 # Auth middleware
+    ├── config/                     # DB config and environment setup
     ├── server.js
-
+    └── package.json
+```
 
 ---
 
@@ -100,3 +101,5 @@ Below are the main API endpoints provided by the backend (`/server`):
   Get all available categories.
 
 ---
+
+**Note:** All transaction endpoints require authentication via JWT in the `Authorization` header.
