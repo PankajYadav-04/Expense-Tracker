@@ -102,4 +102,4 @@ Below are the main API endpoints provided by the backend (`/server`):
 
 ---
 
-**Note:** All transaction endpoints require authentication via JWT in the `Authorization` header.
+
